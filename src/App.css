@@ -1,38 +1,391 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Protest+Revolution&family=Roboto:wght@100;400;500;700;900&family=Rock+Salt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Protest+Revolution&family=Roboto:wght@100;400;500;700;900&family=Rock+Salt&display=swap");
+* {
+  margin: 0;
+  font-family: "Lato", sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.loginPage {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(245, 90, 33);
+  box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.loginPage {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.loginLeftBox {
+  width: 45vw !important;
+}
+.loginLeftBox img {
+  height: 85vh;
+  padding-top: 2rem;
+}
+.loginRightBox {
+  width: 50vw !important;
+  padding-top: 5rem;
+}
+.loginRightBox h1 {
+  margin-left: 1.7rem;
+  font-size: 6rem;
+  color: white;
+  font-family: "Protest Revolution", sans-serif;
+}
+.formDiv {
+  width: 40vw;
+  height: 40vh;
+  margin: 2rem !important;
+}
+.inputDiv {
+  display: flex;
+  gap: 1rem;
+}
+.inputDiv input {
+  width: 16.5vw;
+  border: none !important       ;
+  background-color: white;
+  outline: none !important;
+  margin-bottom: 2rem;
+  height: 4vh;
+  padding: 1.2rem;
+  border-radius: 0.8rem;
+  border-bottom: none !important;
+  font-size: 1rem;
+  /* margin-left: 1em; */
+}
+
+.fullName {
+  width: 37.4vw;
+  border: none !important       ;
+  background-color: white;
+  outline: none !important;
+  margin-bottom: 2rem;
+  height: 4vh;
+  padding: 1.2rem;
+  border-radius: 0.8rem;
+  border-bottom: none !important;
+  font-size: 1rem;
+}
+.loginBtn {
+  width: 40vw !important;
+  border: 2px solid white !important;
+  outline: none !important;
+  height: 9vh !important;
+  padding: 1.2rem !important;
+  border-radius: 1rem;
+  font-size: 1rem !important;
+  margin-bottom: 2rem !important;
+  color: white !important;
+}
+.formDiv p {
+  font-size: 1.5rem;
+  text-align: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* /////////////Home  */
+.appBar {
+  background-color: white !important;
+}
+.cineElkHead {
+  font-family: "Protest Revolution", sans-serif !important;
+  font-size: 2.7rem !important;
+  color: orange;
+}
+.Sidebar {
+  margin-top: 2rem !important;
+  height: 20vh !important;
+}
+#classSidebar {
+  display: "flex";
+}
+.drawer {
+  width: "drawerWidth";
+}
+.drawerPaper {
+  width: "drawerWidth";
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.css-12i7wg6-MuiPaper-root-MuiDrawer-paper {
+  margin-top: 4.2rem !important;
+}
+.LeftBarIcons img {
+  height: 6vh;
+}
+.LeftBarIconsDiv {
+  width: 3vw;
+  padding: 0.2rem;
+  border-radius: 1rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.content {
+  margin-left: 5.5rem;
+}
+
+.nowplayinDiv {
+  max-width: 100vw;
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+.nowPlayingPaper {
+  margin-left: 1rem;
+}
+.nowPlayingPaper img {
+  height: 30vh;
+  border-radius: 0.3rem;
+}
+.content {
+  overflow-y: scroll;
+  scrollbar-width: none;
+  margin-bottom: 2rem;
+}
+.moviesListsDiv {
+  margin-top: 4rem;
+}
+.moviesDiv {
+  padding: 0.2rem;
+}
+.moviesDiv p {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+  margin: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* ///////REVIEW ////////// */
+.mainReviewDiv {
+  margin-top: 5rem;
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.revieswPAge {
+  width: 40vw;
+  border: 0.5px solid lightgray;
+  padding: 0.8rem;
+  border-radius: 1rem;
+  margin-left: 2rem;
+}
+
+.UserNname {
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+.UserNname h2 {
+  font-size: 1.5rem;
+}
+.UserNname img {
+  height: 6vh;
+  width: 3vw;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+.btnBack {
+  background-color: tomato;
+  width: 1.8vw;
+  padding: 0.3rem;
+  border-radius: 40%;
+}
+.editBtn {
+  background-color: orange;
+  width: 1.8vw;
+  padding: 0.3rem;
+  border-radius: 40%;
+  margin: 0rem 1rem;
+}
+.BtnDiv {
+  margin-top: 1.5rem;
+  display: flex;
+}
+
+.imagePoster img {
+  height: 28vh;
+}
+.revieswPAge {
+  display: flex;
+  border: 2px solid grey;
+}
+.UserDiv {
+  width: 30vw;
+  text-wrap: wrap;
+}
+/* ///////////////////////// */
+
+/* ////////////////// */
+.SimilarMoviesOuteDiv {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  overflow-x: scroll;
+  scrollbar-width: none;
+  gap: 0.5rem;
+}
+
+/* ////////////////// */
+.DiloguBox {
+  width: 30vw;
+  height: 50vh;
+}
+.textArea {
+  font-size: 1rem;
+  padding: 1rem;
+  height: 20vh;
+  width: 25vw;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid rgb(131, 125, 125);
+}
+.InputDiv {
+  display: flex;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  gap: 1rem;
+}
+.InputDiv input {
+  width: 3rem;
+  border: none;
+  border-bottom: 1px solid black;
+
+  outline: none;
+  font-size: 1.5rem;
+}
+.InputDiv p {
+  font-size: 1.8rem;
+}
+
+/* ////////////////////Movie Datils */
+
+.movieDetailsmainDiv {
+  margin-top: 4.4rem;
+  margin-left: 2rem;
+}
+.movieDetailsmainDiv img {
+  height: 78vh;
+}
+.movieDetailsmainDiv {
+  display: flex;
+}
+
+.MovieDetailsImage img {
+  height: 70vh;
+  margin-left: 7rem;
+  margin-bottom: 1rem;
+}
+.movieDetailsLeftDiv h1 {
+  font-size: 2rem;
+  margin: 1.5rem 0rem;
+}
+.movieDetailsLeftDiv p {
+  font-size: 1.3rem;
+  margin: 0.8rem 0rem;
+}
+.postReviewBtn {
+  background-color: tomato !important;
+  padding: 0.8rem !important;
+  margin: 0.5rem 0rem !important;
+}
+.bottomDev {
+  display: flex;
+  justify-content: space-between;
+}
+.ReviewContent {
+  margin-bottom: 2.2rem;
+  height: 10vh;
+}
+.reviewsInMdetail {
+  height: 20vh;
+  margin-top: 1rem;
+  padding: 0.5rem;
+}
+.reviewsInMdetail p {
+  font-size: 1.2rem;
+}
+.userDetailsmVd img {
+  height: 5vh;
+  width: auto;
+  border-radius: 50%;
+  background-color: black;
+}
+.userDetailsmVd {
+  display: flex;
+}
+.CastNCrew h6 {
+  text-align: center;
+  /* margin-left: 1rem; */
+}
+.CastNCrew img {
+  height: 10vh;
+  margin-left: 1rem;
+  border-radius: 50%;
+}
+.CastNCrewOuterdiv {
+  display: flex;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+.similarMv img {
+  height: 22vh;
+  border-radius: 0.2rem;
+}
+.movieDetailsLeftDiv {
+  margin-top: 1rem;
+  width: 60vw;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  max-height: 80vh;
+}
+.movieDetailsRightDiv {
+  width: 50vw;
+  margin-left: 1rem;
+  padding: 1rem 3rem;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  max-height: 80vh;
+}
+.movieDetailsRightDiv h1 {
+  margin: 1rem;
+  font-family: "Lato", sans-serif;
+}
+
+/* /////////////////////// revie  */
+
+.MyReviesMainDiv {
+  margin-left: 1rem;
+  width: 80vw;
+  margin-top: 5rem;
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.ContentInMyReview {
+  min-height: 10vh;
+}
+
+/* //////////////// */
+.css-16ac5r2-MuiButtonBase-root-MuiListItemButton-root.Mui-selected {
+  background-color: orange !important;
+}
+.css-16ac5r2-MuiButtonBase-root-MuiListItemButton-root {
+  width: 5vw !important;
+  height: 5vw !important;
+  background-color: rgb(93, 163, 243) !important;
+  border-radius: 1rem !important;
+  margin-top: 0.8rem !important;
+  padding: 0 !important;
+  margin-left: 0.5rem !important;
+}
+
+.ToolBar {
+  padding-left: 2rem;
+}
+.ToolBar img {
+  padding-left: 5rem;
+  height: 8vh;
+  padding-right: 1rem;
 }
